@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6月：基础复习</title>
+	<style type="text/css">
+		td{
+			text-align: center;
+			padding: 10px;
+		}
+	</style>
+</head>
+<body>
+	<script>
+		var myYar = setInterval(function(){ myTimer() }, 1000);
+		
+		function myTimer() {
+			var d = new Date("2020, 12, 20");
+			var b = new Date();
+			var c1 = Math.ceil((d.getTime()  - b.getTime())/(24*60*60*1000));
+			var c2 = Math.ceil(((d.getTime()  - b.getTime())%(24*60*60*1000))/(60*60*1000));
+			var c3 = Math.ceil((((d.getTime()  - b.getTime())%(24*60*60*1000))%(60*60*1000))/(60*1000));
+			var c4 = Math.ceil(((((d.getTime()  - b.getTime())%(24*60*60*1000))%(60*60*1000))%(60*1000))/1000);
+			document.getElementById("yan").innerHTML = c1 + "天" + c2 + "小时" + c3 +"分" + c4 +"秒";
+		}
+	</script>
+
+    <table align="center" border="1">
+        <thead>
+            <td align="center" bgcolor="red" colspan="9"><h3>6月：基础复习</h3></td>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="9"><h3>上课时间复习计划（考试月）</h3><h4>考研倒计时：<span style="color: red;" id="yan">
+                	
+                </span></h4></td>
+            </tr>
+			<tr>
+				<td colspan="2">作息时间</td>
+			    <td>Mon</td>
+				<td>Tues</td>
+				<td>Wednes</td>
+				<td>Thurs</td>
+				<td>Fri</td>
+				<td>Satur</td>
+				<td>Sun</td>
+			</tr>
+			<tr><td colspan="9"> <hr ></td></tr>
+			<tr>
+				<td rowspan="5" style="background-color: #7CFB95;">上午</td>
+			    <td>6:00--7:00</td>
+				<td colspan="6">背单词</td>
+				<td>休息</td>
+			</tr>
+			<tr>
+			    <td>8:20--10:20</td>
+				<td>C语言和数据结构</td>
+				<td>高数</td>
+				<td>Java</td>
+				<td>软件项目管理</td>
+				<td>软件项目管理</td>
+				<td>高数</td>
+				<td>复习</td>
+			</tr>
+			<tr>
+			    <td colspan="8">休息20 min</td>
+			</tr>
+			<tr>
+			    <td>10:40--11:30</td>
+				<td>英语</td>
+				<td>云计算</td>
+				<td>Java</td>
+				<td>C语言和数据结构</td>
+				<td>云计算</td>
+				<td>英语</td>
+				<td>复习</td>
+			</tr>
+			<tr>
+			    <td style="color: red;">11:30--13:30</td>
+				<td colspan="7" style="color: red;">吃饭</td>
+			</tr>
+			<tr><td colspan="9"> <hr ></td></tr>
+			<tr>
+				<td colspan="2">作息时间</td>
+			    <td>Mon</td>
+				<td>Tues</td>
+				<td>Wednes</td>
+				<td>Thurs</td>
+				<td>Fri</td>
+				<td>Satur</td>
+				<td>Sun</td>
+			</tr>
+			<tr><td colspan="9"> <hr ></td></tr>
+			<tr>
+				<td rowspan="4" style="background-color: #FBC87C;">下午</td>
+			    <td>13:30--14:30</td>
+				<td colspan="6">背单词</td>
+				<td>休息</td>
+			</tr>
+			<tr>
+			    <td colspan="8">休息20 min</td>
+			</tr>
+			<tr>
+			    <td>14:50--16:50</td>
+				<td colspan="6">专业课</td>
+				<td>休息</td>
+			</tr>
+			<tr>
+			    <td style="color: red;">16:50--19:00</td>
+			    <td colspan="7" style="color: red;">吃饭和休息</td>
+			</tr>
+			<tr><td colspan="9"> <hr ></td></tr>
+			<tr>
+				<td colspan="2">作息时间</td>
+			    <td>Mon</td>
+				<td>Tues</td>
+				<td>Wednes</td>
+				<td>Thurs</td>
+				<td>Fri</td>
+				<td>Satur</td>
+				<td>Sun</td>
+			</tr>
+			<tr><td colspan="9"> <hr ></td></tr>
+			<tr>
+				<td rowspan="4" style="background-color: #C4BAB2;">晚上</td>
+			    <td>19:00--21:00</td>
+				<td colspan="7">Java和数据结构</td>
+			</tr>
+			<tr>
+			    <td colspan="8">休息10 min</td>
+			</tr>
+			<tr>
+			    <td>21:10--22:00</td>
+				<td colspan="6">政治</td>
+				<td>政治</td>
+			</tr>
+			<tr>
+			    <td style="color: red;">22:00</td>
+			    <td colspan="7" style="color: red;">洗刷睡觉</td>
+			</tr>
+			<tr><td colspan="9"> <hr ></td></tr>
+        </tbody>
+    </table>
+</body>
+</html>
